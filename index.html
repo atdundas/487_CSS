@@ -31,9 +31,10 @@
   </head>
 
   <body class="myriad">
-    <div id="nav1"></div>
-    <div id="nav2">
-      <div id="center-icons" class="align-items flex-around">
+    <div id="nav1" class="container-fluid"></div>
+    <div id="nav2" class="container-fluid row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 align-items flex-around">
         <div>
           <div class="spritesgreen-1 absolute"></div>
           <div class="spritesblue-1 absolute hide-nav display-nav"></div>
@@ -59,9 +60,10 @@
           <div class="spritesblue-6 absolute hide-nav display-nav"></div>
         </div>
       </div>
+      <div class="col-lg-3"></div>
     </div>
 
-    <div id="div-sect">
+    <div id="div-sect" class="container">
       <div id="dashboard" class="flex-between align-items">
         <h1 class="white-text">Dashboard</h1>
         <form id="search" class="align-items" action="#">
@@ -95,7 +97,7 @@
         </div>
 
         <div id="container" class="row">
-          <div id="left-column" class="col-sm-5 no-padding">
+          <div id="left-column" class="col-md-5 no-padding">
             <div id="div-tasks">
               <div id="top-bar">
                 <h2 class="blue-text">Tasks</h2>
@@ -233,7 +235,7 @@
             <div id="col-color">
               <h2 id="analytics" class="blue-text">Analytics</h2>
               <div id="right-column" class="row">
-                <div class="col-lg-9">
+                <div class="col-md-9">
                   <div class="flex-between">
                     <div>Activity</div>
                     <select name="dates" id="dates-drop">
@@ -341,7 +343,7 @@
                 </div>
               </div>
 
-              <div id="know-sect">
+              <div id="know-sect" class="align-items">
                 <div id="did-you">
                   <p id="know-text">
                     DID YOU KNOW? Maecenas sed diam eget risus varius blandit
@@ -355,25 +357,27 @@
           </div>
         </div>
 
-        <div id="img-bar" class="row">
-          <h2 class="col-md-4 flex-center">
+        <div id="img-bar" class="row flex-around">
+          <div class="col-lg-4 flex-center">
             <img
               src="img\Application-Dashboard_03.png"
               alt="green decorative image"
             />
-          </h2>
-          <h2 class="col-md-4 flex-center">
+          </div>
+          
+          <div class="col-lg-4 flex-center">
             <img
               src="img\Application-Dashboard_05.png"
               alt="Group of standing happy people"
             />
-          </h2>
-          <h2 class="col-md-4 flex-center">
+          </div>
+
+          <div class="col-lg-4 flex-center">
             <img
               src="img\Application-Dashboard_07.png"
               alt="Orange decorative image"
             />
-          </h2>
+          </div>
         </div>
       </div>
     </div>

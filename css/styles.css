@@ -112,7 +112,6 @@ a.no-underline:link {
 
 #nav2 {
   height: 10vh;
-  width: 100%;
   background-color: #134670;
   background-image: url(../img/background/bck-pattern.png),
     url(../img/background/back-shadow.png),
@@ -124,10 +123,6 @@ a.no-underline:link {
   justify-content: center;
   align-items: center;
   margin-bottom: 2%;
-}
-
-#center-icons {
-  width: 60%;
 }
 
 /*Dashboard-Search*/
@@ -357,13 +352,15 @@ a.no-underline:link {
 
 #did-you {
   margin: 0 auto;
-  width: 90%;
-  height: 5vh;
+  width: 94%;
+  height: auto;
   background: #2498f4;
+  padding: 6% 10% 6% 10%;
 }
 
 #know-text {
   color: white;
+  font-size: 0.9rem;
 }
 
 /*Img Bar*/
