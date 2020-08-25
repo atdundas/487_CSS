@@ -1,0 +1,614 @@
+/*Index*/
+
+/*General*/
+/*universal classes, body, headings*/
+
+/*Navbars*/
+/*first navbar, second navbar, icons*/
+
+/*Dashboard-Search*/
+/*Dashboard bar, search bar*/
+
+/*Main Body*/
+/*Body content: Tasks, Recommendations, Analytics, Customers, Img Bar*/
+
+/*Footer*/
+
+/*General*/
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 0 0 0;
+}
+
+h5 {
+  margin: 0 0 0 0;
+}
+
+.align-items {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.img-auto {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.auto-margin {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.no-margin {
+  margin: 0 0 0 0 !important;
+}
+
+.no-padding {
+  padding: 0 0 0 0 !important;
+}
+
+.reflect {
+  transform: rotate(180deg);
+}
+
+.icon-links {
+  height: 22px;
+  width: 22px;
+}
+
+.myriad {
+  font-family: myriad-pro, sans-serif;
+}
+
+.blue-text {
+  color: #2498f4;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.grey-text {
+  color: #777777;
+}
+
+a.no-underline:link {
+  text-decoration: none;
+}
+
+/*NavBars*/
+
+#nav1 {
+  background-color: #208de4;
+  height: 4vh;
+}
+
+#nav2 {
+  height: 10vh;
+  width: 100%;
+  background-color: #134670;
+  background-image: url(../img/background/bck-pattern.png),
+    url(../img/background/back-shadow.png),
+    url(../img/background/back-right-shadow.png),
+    url(../img/background/back-left-shadow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+#center-icons {
+  width: 60%;
+}
+
+/*Dashboard-Search*/
+
+#dashboard {
+  background-color: #33cc66;
+  height: 8vh;
+  margin-bottom: 2%;
+  padding: 0 2% 0 2%;
+  border-radius: 5px;
+}
+
+#search-bar {
+  border: none;
+  height: 26px;
+}
+
+#search-icon {
+  background-color: white;
+  height: 26px;
+  margin-top: 5px;
+}
+
+/*Main Body*/
+
+#body-background {
+  padding: 1% 1% 1% 1%;
+  border-radius: 5px;
+  background-image: linear-gradient(grey, white, white, white, white, white);
+}
+
+#container {
+  height: 85%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid;
+}
+
+#left-column {
+  border-right: solid 1px;
+}
+
+#right-column {
+  padding: 0 5% 0 5%;
+}
+
+#analytics {
+  padding: 0 6% 0 6%;
+}
+
+#div-sect {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+#announcements {
+  background: white;
+  font-size: 0.9rem;
+  border-top: solid 1px;
+}
+
+#announcements-main-text {
+  padding: 1% 1% 1% 1%;
+  height: 100%;
+  color: #fe7f13;
+  border-left: black solid 1px;
+  border-right: black solid 1px;
+}
+
+#announcement-p {
+  padding: 1% 0 1% 0;
+  border-right: black solid 1px;
+}
+
+#left-btns {
+  border-right: solid 1px;
+  padding: 1% 0 1% 0;
+}
+
+.announce-button {
+  border-radius: 5px;
+  height: 20px;
+  padding: 0 2px 0 2px;
+}
+
+/*Tasks*/
+
+.numbers {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  padding: 13px 15px 17px 15px;
+  background-color: #33cc66;
+}
+
+#div-tasks {
+}
+
+.task-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 2% 3% 2%;
+  border-bottom: solid black 1px;
+}
+
+#top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+}
+
+.task-details {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.person-box {
+  border: solid black 1px;
+  width: 55px;
+  height: auto;
+  padding: 2px 4px 2px 4px;
+}
+
+.person-blue {
+  opacity: 100;
+}
+
+.person-grey {
+  opacity: 0;
+}
+
+.task-line:hover .blue-text {
+  color: #cccccc;
+  transition: 0.7s ease;
+}
+.task-line:hover .numbers {
+  background-color: #cccccc;
+  transition: 0.7s ease;
+}
+
+.task-line:hover .person-grey {
+  opacity: 100;
+  transition: 0.7s ease;
+}
+
+.task-line:hover .person-blue {
+  opacity: 0;
+  transition: 0.7s ease;
+}
+
+/*End task hover states*/
+
+/* Recommendations*/
+
+#div-reco {
+}
+
+.reco-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+}
+
+#top-bar-reco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+}
+
+.reco-details {
+  width: 90%;
+}
+
+.reco-line a {
+  text-decoration: none;
+}
+
+.reco-line:hover {
+  color: black;
+  transition: 0.7s ease;
+}
+
+/*Analytics*/
+
+#col-color {
+  background: white;
+}
+
+/*Analytics*/
+
+#checkboxes {
+  width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+/*Customer Support*/
+
+#customer {
+  margin: 2vh 0 0 0;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  text-align: center;
+}
+
+/*Did You*/
+
+#know-sect {
+  width: 100%;
+  padding: 2% 2% 2% 2%;
+  border-top: solid 1px;
+}
+
+#did-you {
+  margin: 0 auto;
+  width: 90%;
+  height: 5vh;
+  background: #2498f4;
+}
+
+#know-text {
+  color: white;
+}
+
+/*Img Bar*/
+
+#img-bar {
+  height: 11%;
+  background-color: #2498f4;
+  margin: 0 0 0 0;
+}
+
+/*Footer*/
+
+#footer {
+  height: 2vh;
+  background-color: dodgerblue;
+}
+
+/* Generated by http://css.spritegen.com CSS Sprite Generator */
+
+.spritesblue-5,
+.spritesgreen-5,
+.spritesblue-1,
+.spritesblue-2,
+.spritesblue-3,
+.spritesblue-4,
+.spritesblue-6,
+.spritesgreen-1,
+.spritesgreen-2,
+.spritesgreen-3,
+.spritesgreen-4,
+.spritesgreen-6,
+.spritesinfo,
+.spritespaper-icon,
+.spritesleft-arrow-btn,
+.spritesperson-blue,
+.spritesperson-grey,
+.spritesidea-icon,
+.spritesarrow-down,
+.spritesleft-arrow {
+  display: inline-block;
+  background: url('../img/sprites/sprite-sheet.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.spritesblue-5 {
+  background-position: -2px -0px;
+  width: 66px;
+  height: 89px;
+}
+.spritesgreen-5 {
+  background-position: -2px -91px;
+  width: 66px;
+  height: 89px;
+}
+.spritesblue-1 {
+  background-position: -2px -182px;
+  width: 65px;
+  height: 89px;
+}
+.spritesblue-2 {
+  background-position: -2px -273px;
+  width: 65px;
+  height: 89px;
+}
+.spritesblue-3 {
+  background-position: -2px -364px;
+  width: 65px;
+  height: 89px;
+}
+.spritesblue-4 {
+  background-position: -2px -455px;
+  width: 65px;
+  height: 89px;
+}
+.spritesblue-6 {
+  background-position: -2px -546px;
+  width: 65px;
+  height: 89px;
+}
+.spritesgreen-1 {
+  background-position: -2px -637px;
+  width: 65px;
+  height: 89px;
+}
+.spritesgreen-2 {
+  background-position: -2px -728px;
+  width: 65px;
+  height: 89px;
+}
+.spritesgreen-3 {
+  background-position: -2px -819px;
+  width: 65px;
+  height: 89px;
+}
+.spritesgreen-4 {
+  background-position: -2px -910px;
+  width: 65px;
+  height: 89px;
+}
+.spritesgreen-6 {
+  background-position: -2px -1001px;
+  width: 65px;
+  height: 89px;
+}
+.spritesinfo {
+  background-position: -2px -1092px;
+  width: 28px;
+  height: 29px;
+}
+.spritespaper-icon {
+  background-position: -32px -1092px;
+  width: 24px;
+  height: 23px;
+}
+.spritesleft-arrow-btn {
+  background-position: -32px -1117px;
+  width: 22px;
+  height: 22px;
+}
+.spritesperson-blue {
+  background-position: -2px -1123px;
+  width: 20px;
+  height: 21px;
+}
+.spritesperson-grey {
+  background-position: -24px -1143px;
+  width: 20px;
+  height: 21px;
+}
+.spritesidea-icon {
+  background-position: -46px -1141px;
+  width: 18px;
+  height: 23px;
+}
+.spritesarrow-down {
+  background-position: -2px -1146px;
+  width: 14px;
+  height: 10px;
+}
+.spritesleft-arrow {
+  background-position: -2px -1158px;
+  width: 12px;
+  height: 18px;
+}
+
+/* Generated by http://css.spritegen.com CSS Sprite Generator */
+
+.img-footer,
+.settings,
+.search-icon,
+.checklist,
+.left-arrow-btn,
+.settings-grey,
+.img-4sq,
+.fb,
+.grey-4sq,
+.grey-fb,
+.grey-tw,
+.grey-yt,
+.tw,
+.yt {
+  display: inline-block;
+  background: url('../img/sprites/sprite-sheet2.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.img-footer {
+  background-position: -2px -0px;
+  width: 30px;
+  height: 30px;
+}
+.settings {
+  background-position: -2px -32px;
+  width: 28px;
+  height: 29px;
+}
+.search-icon {
+  background-position: -2px -63px;
+  width: 24px;
+  height: 24px;
+}
+.checklist {
+  background-position: -2px -89px;
+  width: 22px;
+  height: 20px;
+}
+.left-arrow-btn {
+  background-position: -2px -111px;
+  width: 22px;
+  height: 22px;
+}
+.settings-grey {
+  background-position: -2px -135px;
+  width: 20px;
+  height: 20px;
+}
+.img-4sq {
+  background-position: -2px -157px;
+  width: 16px;
+  height: 16px;
+}
+.fb {
+  background-position: -2px -175px;
+  width: 16px;
+  height: 16px;
+}
+.grey-4sq {
+  background-position: -2px -193px;
+  width: 16px;
+  height: 16px;
+}
+.grey-fb {
+  background-position: -2px -211px;
+  width: 16px;
+  height: 16px;
+}
+.grey-tw {
+  background-position: -2px -229px;
+  width: 16px;
+  height: 16px;
+}
+.grey-yt {
+  background-position: -2px -247px;
+  width: 16px;
+  height: 16px;
+}
+.tw {
+  background-position: -2px -265px;
+  width: 16px;
+  height: 16px;
+}
+.yt {
+  background-position: -2px -283px;
+  width: 16px;
+  height: 16px;
+}
+
+.hide-nav {
+  opacity: 0;
+}
+
+.hide-nav:hover {
+  opacity: 100;
+}
