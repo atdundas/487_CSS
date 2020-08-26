@@ -33,31 +33,35 @@
   <body class="myriad">
     <div id="nav1" class="container-fluid"></div>
     <div id="nav2" class="container-fluid row">
+      <img src="img\background\fade-left.png" alt="Blue fade left"
+      id="fade-left">
+      <img src="img\background\fade-right.png" alt="Blue fade right"
+      id="fade-right">
       <div class="col-lg-3"></div>
-      <div class="col-lg-6 align-items flex-around">
+      <div class="col-lg-6 align-items flex-around icon-pos">
         <div>
-          <div class="spritesgreen-1 absolute"></div>
-          <div class="spritesblue-1 absolute hide-nav display-nav"></div>
+          <div class="spritesgreen-1 absolute nav-icons"></div>
+          <div class="spritesblue-1 absolute hide-nav display-nav nav-icons"></div>
         </div>
         <div>
-          <div class="spritesgreen-2 absolute"></div>
-          <div class="spritesblue-2 absolute hide-nav display-nav"></div>
+          <div class="spritesgreen-2 absolute nav-icons"></div>
+          <div class="spritesblue-2 absolute hide-nav display-nav nav-icons"></div>
         </div>
         <div>
-          <div class="spritesgreen-3 absolute"></div>
-          <div class="spritesblue-3 absolute hide-nav display-nav"></div>
+          <div class="spritesgreen-3 absolute nav-icons"></div>
+          <div class="spritesblue-3 absolute hide-nav display-nav nav-icons"></div>
         </div>
         <div>
-          <div class="spritesgreen-4 absolute"></div>
-          <div class="spritesblue-4 absolute hide-nav display-nav"></div>
+          <div class="spritesgreen-4 absolute nav-icons"></div>
+          <div class="spritesblue-4 absolute hide-nav display-nav nav-icons"></div>
         </div>
         <div>
-          <div class="spritesgreen-5 absolute"></div>
-          <div class="spritesblue-5 absolute hide-nav display-nav"></div>
+          <div class="spritesgreen-5 absolute nav-icons"></div>
+          <div class="spritesblue-5 absolute hide-nav display-nav nav-icons"></div>
         </div>
         <div>
-          <div class="spritesgreen-6 absolute"></div>
-          <div class="spritesblue-6 absolute hide-nav display-nav"></div>
+          <div class="spritesgreen-6 absolute nav-icons"></div>
+          <div class="spritesblue-6 absolute hide-nav display-nav nav-icons"></div>
         </div>
       </div>
       <div class="col-lg-3"></div>
@@ -83,8 +87,8 @@
           >
             ANNOUNCEMENTS
           </p>
-          <p id="announcement-p" class="col-md-9 no-margin">
-            kadhgk kdasfhldfh
+          <p id="announcement-p" class="col-md-9 no-margin scroll">
+            Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus
           </p>
           <div id="left-btns" class="col-md-1 align-items flex-center">
             <a class="icon-links" href="#"
@@ -235,21 +239,21 @@
             <div id="col-color">
               <h2 id="analytics" class="blue-text">Analytics</h2>
               <div id="right-column" class="row">
-                <div class="col-md-9">
+                <div class="col-xlg-10 right-col-divider">
                   <div class="flex-between">
-                    <div>Activity</div>
+                    <div class="grey-text">Activity</div>
                     <select name="dates" id="dates-drop">
-                      <option value="date1">date1</option>
-                      <option value="date2">date2</option>
-                      <option value="date3">date3</option>
-                      <option value="date4">date4</option>
+                      <option value="date1">11/16/2016-05/20/2020</option>
+                      <option value="date2">08/27/17-06/04/18</option>
+                      <option value="date3">08/20/19-05/20/21</option>
+                      <option value="date4">10/18/2020-(indefinite)</option>
                     </select>
                   </div>
 
                   <div id="placeholder1 img-auto align-items">
                     <div>
                       <img
-                      class="auto-margin"
+                      id="main-graph"
                       src="img\Application-Dashboard_25.png"
                       alt="Graph"
                       />
@@ -257,88 +261,110 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-xlg-2 right-col-divider">
                   <div>
-                    <p class="no-margin">Channels</p>
+                    <p class="no-margin grey-text">Channels</p>
                     <img src="img\graph2-1.png" alt="Pie Graph" />
-                    <p class="no-margin">Referrals</p>
+                    <p class="no-margin grey-text">Referrals</p>
                     <img src="img\graph2-2.png" alt="Pie Graph" />
                   </div>
                   <div id="placeholder2"></div>
                 </div>
+              </div>
 
-                <div id="checkboxes">
-                  <div id="checkboxes" class="flex-around">
-                    <input
-                      type="checkbox"
-                      name="social-media"
-                      value="Facebook"
-                    />
-                    Facebook
-                    <input
-                      type="checkbox"
-                      name="social-media"
-                      value="Twitter"
-                    />
-                    Twitter
-                    <input
-                      type="checkbox"
-                      name="social-media"
-                      value="Foursquare"
-                    />
-                    Foursquare
-                    <input
-                      type="checkbox"
-                      name="social-media"
-                      value="Google+"
-                    />
-                    Google+
-                  </div>
+              <div id="checkboxes flex-center">
+                <div id="checkboxes" class="flex-around white-text">
+                  <input
+                    type="checkbox"
+                    name="social-media"
+                    value="Facebook"
+                    id="fb"
+                    class="sm-text"
+                  />
+                  <p id="fb"
+                  class="sm-text no-margin">
+                  Facebook
+                  </p>
+
+                  <input
+                    type="checkbox"
+                    name="social-media"
+                    value="Twitter"
+                  />
+                  <p id="tw"
+                  class="sm-text no-margin">Twitter</p>
+
+                  <input
+                    type="checkbox"
+                    name="social-media"
+                    value="Foursquare"
+                  />
+                  <p id="sq"
+                  class="sm-text no-margin">
+                  Foursquare
+                  </p>
+
+                  <input
+                    type="checkbox"
+                    name="social-media"
+                    value="Google+"
+
+                  />
+                  <p id="gl" class="sm-text no-margin">
+                  Google+
+                  </p>
                 </div>
               </div>
+              
               <!--End Analytics-->
 
               <!--Begin Customer Reviews-->
               <div id="customer" class="row">
-                <div id="placeholder3" class="col-lg-6">
-                  <div class="flex-center">
-                    <img
-                      src="img\Application-Dashboard_44.png"
-                      alt="Green Customer Banner"
-                    />
-                  </div>
+                <div class="col-lg-6 flex-center">
+                  <div class="cust-border">
+                    <div class="flex-center">
+                      <img
+                        src="img\Application-Dashboard_44.png"
+                        alt="Green Customer Banner"
+                        class="banner-img"
+                      />
+                    </div>
 
-                  <div class="banner-text">
-                    <h4 class="no-margin white-text">75 Contacts</h4>
-                    <p class="no-margin white-text">4 Influencers</p>
-                  </div>
+                    <div class="banner-text">
+                      <h4 class="no-margin white-text customer-head">75 CONTACTS</h4>
+                      <p class="no-margin white-text customer-text">4 INFLUENCERS</p>
+                    </div>
 
-                  <div class="flex-center">
-                    <img
-                      src="img\Application-Dashboard_57.png"
-                      alt="green line graph"
-                    />
+                    <div class="customer-graphs flex-center">
+                      <img
+                        src="img\Application-Dashboard_57.png"
+                        alt="green line graph"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div id="placeholder4" class="col-lg-6">
-                  <div class="flex-center">
-                    <img
-                      src="img\Application-Dashboard_46.png"
-                      alt="Orange Customer Banner"
-                    />
-                  </div>
+                <div id="placeholder4" class="col-lg-6 flex-center">
+                  <div class="cust-border">
+                    <div class="flex-center">
+                      <img
+                        src="img\Application-Dashboard_46.png"
+                        alt="Orange Customer Banner"
+                        class="banner-img"
+                      />
+                    </div>
 
-                  <div class="banner-text">
-                    <h4 class="no-margin white-text">75 Contacts</h4>
-                    <p class="no-margin white-text">4 Influencers</p>
-                  </div>
+                    <div class="banner-text">
+                      <h4 class="customer-head no-margin white-text">75 CUSTOMERS</h4>
+                      <p class="no-margin white-text customer-text">0 INFLUENCERS</p>
+                    </div>
 
-                  <div class="flex-center">
-                    <img
-                      src="img\Application-Dashboard_60.png"
-                      alt="orange line graph"
-                    />
+                    <div class="flex-center customer-graphs">
+                      <img
+                        src="img\Application-Dashboard_60.png"
+                        alt="orange line graph"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -352,36 +378,46 @@
                     euismod.
                   </p>
                 </div>
+                <div id="right-know">
+                  <a href="#"><span id="circle-1" class="white-circle">
+                    <div class="spritesleft-arrow move-right reflect"></div>
+                  </span></a>
+                  <a href="#"><span id="circle-2" class="white-circle">
+                    <div class="spritesleft-arrow move-left"></div>
+                  </span></a>
+                </div>
+                <div id="left-know"></div>
               </div>
             </div>
           </div>
         </div>
 
         <div id="img-bar" class="row flex-around">
-          <div class="col-lg-4 flex-center">
-            <img
-              src="img\Application-Dashboard_03.png"
-              alt="green decorative image"
-            />
-            <div id="img-text-1">
-              <h2 class="no-margin img-text-1-head">Watch what</h2>
-              <h2 class="no-margin img-text-1-head">you say.</h2>
-              <p class="no-margin img-text-1-p">Message Management</p>
+          <div class="col-xlg-4 flex-center expand">
+            <div id="img-box-1">
+              <div id="img-text-1">
+                <h2 class="no-margin img-text-1-head">Watch what</h2>
+                <h2 class="no-margin img-text-1-head">you say.</h2>
+                <p class="no-margin img-text-1-p">Message Management</p>
+              </div>
             </div>
           </div>
           
-          <div class="col-lg-4 flex-center">
-            <img
-              src="img\Application-Dashboard_05.png"
-              alt="Group of standing happy people"
-            />
+          <div class="col-xlg-4 flex-center expand">
+            <div id="img-box-2" class="align-items flex-center">
+              <div id="img-text-2">
+                <p class="no-margin white-text">See what others are doing with us.</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 flex-center">
-            <img
-              src="img\Application-Dashboard_07.png"
-              alt="Orange decorative image"
-            />
+          <div class="col-xlg-4 flex-center expand">
+            <div id="img-box-3">
+              <div id="img-text-3">
+                <h2 class="no-margin img-text-3-head">Version 2.0</h2>
+                <h2 class="no-margin img-text-3-head">is coming</h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
