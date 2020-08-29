@@ -107,13 +107,40 @@ h5 {
 a.no-underline:link {
 	text-decoration: none;
 }
+
 /*End General*/
 
 /*Navbars*/
 
+.nav-link:link {
+	text-decoration: none;
+	padding: 0 0 0 0;
+	color: white;
+}
+
+.nav-link:visited {
+	text-decoration: none;
+	padding: 0 0 0 0;
+	color: white;
+}
+
 #nav1 {
 	background-color: #208de4;
 	height: 44px;
+}
+
+#nav1-box {
+	float: right;
+	padding: 8px 10% 0 0;
+}
+
+.nav1-item {
+	margin: 0px 10px 0 10px;
+}
+
+.nav1-divider {
+	border-left: 1px solid #1875c2;
+	height: 22px;
 }
 
 #nav2 {
@@ -207,10 +234,6 @@ a.no-underline:link {
 
 #left-column {
 	border-right: solid 1px #eeeeee;
-}
-
-#right-column {
-	padding: 0 5% 0 5%;
 }
 
 #div-sect {
@@ -332,9 +355,6 @@ a.no-underline:link {
 
 /* Recommendations*/
 
-#div-reco {
-}
-
 .reco-line {
 	width: 100%;
 	display: flex;
@@ -365,6 +385,10 @@ a.no-underline:link {
 
 /*Analytics*/
 
+#right-column {
+	padding: 0 5% 5% 5%;
+}
+
 #col-color {
 	background: white;
 }
@@ -373,14 +397,87 @@ a.no-underline:link {
 	padding: 0 6% 0 6%;
 }
 
-.right-col-divider {
+.right-left {
 	padding: 0 3% 0 3%;
 }
 
+.right-right {
+	padding: 0 3% 0 3%;
+	border-left: solid 1px #777777;
+}
+
+/*Code from wisdmlabs.com*/
+
+.search_categories {
+	font-size: 13px;
+	padding: 5px 8px 5px 5px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+}
+
+.search_categories .select {
+	width: 120%;
+	background: url('../img/images/down-arrow.png') no-repeat;
+	background-position: 80% center;
+}
+
+.search_categories .select select {
+	background: transparent;
+	line-height: 1;
+	border: 0;
+	padding: 0;
+	border-radius: 0;
+	width: 120%;
+	position: relative;
+	z-index: 10;
+	font-size: 1em;
+}
+
+/*End code from wisdmlabs.com*/
+
 #checkboxes {
 	width: 100%;
-	padding: 0 10% 0 10%;
+	padding: 0 10% 5% 10%;
+	max-height: 55px;
 }
+
+/*Code from css-workshop.com*/
+
+#trigger1,
+#trigger2,
+#trigger3,
+#trigger4 {
+	display: none;
+}
+
+.checker {
+	background-image: url(../img/images/checkboxes_05.png);
+	background-size: auto 100%;
+	width: 22px;
+	height: 22px;
+	background-repeat: no-repeat;
+}
+
+#trigger1:checked + .checker {
+	background-image: url(../img/images/checkboxes_03.png);
+}
+
+#trigger2:checked + .checker {
+	background-image: url(../img/images/checkboxes_03.png);
+}
+
+#trigger3:checked + .checker {
+	background-image: url(../img/images/checkboxes_03.png);
+}
+
+#trigger4:checked + .checker {
+	background-image: url(../img/images/checkboxes_03.png);
+}
+
+/*End code from css-workshop.com*/
 
 .sm-text {
 	padding: 1px 8px 1px 8px;
@@ -416,8 +513,10 @@ a.no-underline:link {
 
 .cust-border {
 	border: solid 1px #eeeeee;
+	border-radius: 3px;
 	height: 185px;
 	width: 210px;
+	box-shadow: 0px 1px 3px;
 }
 
 .banner-img {
@@ -589,9 +688,64 @@ a.no-underline:link {
 
 /*Footer*/
 
+#footer-back {
+	background-color: #f4f4f4;
+	box-shadow: 0px -5px 10px #999999;
+	margin: 3% 0 0 0;
+}
+
 #footer {
-	height: 2vh;
-	background-color: dodgerblue;
+	min-height: 60px;
+	width: 80%;
+	margin: 0 auto;
+	color: #999999;
+}
+
+a.grey-link:link {
+	color: #999999;
+}
+
+a.grey-link:visited {
+	color: #999999;
+}
+
+#sweepstakes {
+	width: 100%;
+	padding: 0 0 0 15px;
+}
+
+#cooper-box {
+	background: #ffff;
+	border: solid 1px #f4f4f4;
+	padding: 5px;
+	margin: 0 5px 0 10px;
+}
+
+#social-icons {
+	width: 100%;
+}
+
+#grey-icons {
+	width: 85%;
+}
+
+.footer-divider1 {
+	height: 24px;
+	width: 1px;
+	border-left: solid 1px #777777;
+}
+
+.footer-divider2 {
+	border-left: solid 1px #777777;
+	height: 100%;
+	width: 1px;
+}
+
+.grey-fb:hover,
+.grey-tw:hover,
+.grey-4sq:hover,
+.grey-yt:hover {
+	opacity: 0;
 }
 
 /*End Footer*/

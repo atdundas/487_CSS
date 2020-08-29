@@ -31,7 +31,16 @@
   </head>
 
   <body class="myriad">
-    <div id="nav1" class="container-fluid"></div>
+    <div id="nav1" class="container-fluid">
+      <div id="nav1-box" class="flex-center align-items white-text">
+        <a href="#" class="nav-link"><p class="nav1-item">MINI of Raleigh</p></a>
+        <div class="nav1-divider"></div>
+        <a href="#"><div class="spritesinfo nav1-item"></div></a>
+        <div class="nav1-divider"></div>
+        <a href="#"><div class="settings nav1-item"></div></a>
+      </div>
+    </div>
+
     <div id="nav2" class="container-fluid row">
       <img src="img\background\fade-left.png" alt="Blue fade left"
       id="fade-left">
@@ -40,28 +49,28 @@
       <div class="col-lg-3"></div>
       <div class="col-lg-6 align-items flex-around icon-pos">
         <div>
-          <div class="spritesgreen-1 absolute nav-icons"></div>
-          <div class="spritesblue-1 absolute hide-nav display-nav nav-icons"></div>
+          <div class="spritesblue-1 absolute nav-icons"></div>
+          <div class="spritesgreen-1 absolute nav-icons hide-nav"></div>
         </div>
         <div>
-          <div class="spritesgreen-2 absolute nav-icons"></div>
-          <div class="spritesblue-2 absolute hide-nav display-nav nav-icons"></div>
+          <div class="spritesblue-2 absolute nav-icons"></div>
+          <div class="spritesgreen-2 absolute nav-icons hide-nav"></div>
         </div>
         <div>
-          <div class="spritesgreen-3 absolute nav-icons"></div>
-          <div class="spritesblue-3 absolute hide-nav display-nav nav-icons"></div>
+          <div class="spritesblue-3 absolute nav-icons"></div>
+          <div class="spritesgreen-3 absolute nav-icons hide-nav"></div>
         </div>
         <div>
-          <div class="spritesgreen-4 absolute nav-icons"></div>
-          <div class="spritesblue-4 absolute hide-nav display-nav nav-icons"></div>
+          <div class="spritesblue-4 absolute nav-icons"></div>
+          <div class="spritesgreen-4 absolute nav-icons hide-nav"></div>
         </div>
         <div>
-          <div class="spritesgreen-5 absolute nav-icons"></div>
-          <div class="spritesblue-5 absolute hide-nav display-nav nav-icons"></div>
+          <div class="spritesblue-5 absolute nav-icons"></div>
+          <div class="spritesgreen-5 absolute nav-icons hide-nav"></div>
         </div>
         <div>
-          <div class="spritesgreen-6 absolute nav-icons"></div>
-          <div class="spritesblue-6 absolute hide-nav display-nav nav-icons"></div>
+          <div class="spritesblue-6 absolute nav-icons"></div>
+          <div class="spritesgreen-6 absolute nav-icons hide-nav"></div>
         </div>
       </div>
       <div class="col-lg-3"></div>
@@ -239,18 +248,22 @@
             <div id="col-color">
               <h2 id="analytics" class="blue-text">Analytics</h2>
               <div id="right-column" class="row">
-                <div class="col-xlg-10 right-col-divider">
+                <div class="col-xlg-10 right-left">
                   <div class="flex-between">
                     <div class="grey-text">Activity</div>
-                    <select name="dates" id="dates-drop">
-                      <option value="date1">11/16/2016-05/20/2020</option>
-                      <option value="date2">08/27/17-06/04/18</option>
-                      <option value="date3">08/20/19-05/20/21</option>
-                      <option value="date4">10/18/2020-(indefinite)</option>
-                    </select>
+                    <div class="search_categories">
+                      <div class="select">
+                        <select name="search_categories" id="search_categories">
+                          <option value="1" selected="selected">11/16/2016-05/20/2020</option>
+                          <option value="2">08/27/17-06/04/18</option>
+                          <option value="3">08/20/19-05/20/21</option>
+                          <option value="4">10/18/2020-(indefinite)</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
 
-                  <div id="placeholder1 img-auto align-items">
+                  <div id="placeholder1">
                     <div>
                       <img
                       id="main-graph"
@@ -261,7 +274,7 @@
                   </div>
                 </div>
 
-                <div class="col-xlg-2 right-col-divider">
+                <div class="col-xlg-2 right-right">
                   <div>
                     <p class="no-margin grey-text">Channels</p>
                     <img src="img\graph2-1.png" alt="Pie Graph" />
@@ -274,13 +287,14 @@
 
               <div id="checkboxes flex-center">
                 <div id="checkboxes" class="flex-around white-text">
+
                   <input
                     type="checkbox"
                     name="social-media"
                     value="Facebook"
-                    id="fb"
-                    class="sm-text"
+                    id="trigger1"
                   />
+                  <label for="trigger1" class="checker"></label>
                   <p id="fb"
                   class="sm-text no-margin">
                   Facebook
@@ -290,7 +304,9 @@
                     type="checkbox"
                     name="social-media"
                     value="Twitter"
+                    id="trigger2"
                   />
+                  <label for="trigger2" class="checker"></label>
                   <p id="tw"
                   class="sm-text no-margin">Twitter</p>
 
@@ -298,7 +314,9 @@
                     type="checkbox"
                     name="social-media"
                     value="Foursquare"
+                    id="trigger3"
                   />
+                  <label for="trigger3" class="checker"></label>
                   <p id="sq"
                   class="sm-text no-margin">
                   Foursquare
@@ -308,11 +326,13 @@
                     type="checkbox"
                     name="social-media"
                     value="Google+"
-
+                    id="trigger4"
                   />
+                  <label for="trigger4" class="checker"></label>
                   <p id="gl" class="sm-text no-margin">
                   Google+
                   </p>
+                  
                 </div>
               </div>
               
@@ -423,7 +443,52 @@
       </div>
     </div>
 
-    <div id="footer"></div>
+    <div id="footer-back">
+      <div id="footer" class="row white-text">
+        <div class="col-sm-3 flex-around align-items foot-sect">
+          <a href="#" class="no-underline grey-link"><p class="no-margin">Tutorials</p></a>
+          <div class="footer-divider1"></div>
+          <a href="#" class="no-underline grey-link"><p class="no-margin">Support</p></a>
+          <div class="footer-divider1"></div>
+          <a href="#" class="no-underline grey-link"><p class="no-margin">Blog</p></a>
+        </div> 
+        <div class="col-sm-6 align-items flex-between">
+          <div class="footer-divider2"></div>
+          <p id="sweepstakes" class="no-margin"><a href="#"><strong>Ariel Winter</strong></a> likes your <a href="#"><strong>Win a Cooper Sweepstakes</strong></a> Promotion</p>
+          <a href="#"><img src="img/images/PullUp.png" alt="Up arrow"></a>
+        </div>
+        <div class="col-sm-1 flex-center align-items">
+          <div class="footer-divider2"></div>
+          <div id="cooper-box" class="align-items">
+            <div class="img-footer"></div>
+          </div>
+          <p class="no-margin"><a href="#"><strong>Logout</strong></a></p>
+        </div> 
+        <div class="col-sm-2 align-items">
+          <div class="footer-divider2"></div>
+          <div id="social-icons" class="flex-center">
+            <div id="grey-icons" class="flex-around">
+              <a href="#"><div class="align-items">
+                <div class="fb absolute"></div>
+                <div class="grey-fb absolute"></div>
+              </div></a>
+              <a href="#"><div class="align-items">
+                <div class="tw absolute"></div>
+                <div class="grey-tw absolute"></div>
+              </div></a>
+              <a href="#"><div class="align-items">
+                <div class="img-4sq absolute"></div>
+                <div class="grey-4sq absolute"></div>
+              </div></a>
+              <a href="#"><div class="align-items">
+                <div class="yt absolute"></div>
+                <div class="grey-yt absolute"></div>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script
