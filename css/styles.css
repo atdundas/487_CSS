@@ -317,6 +317,7 @@ a.no-underline:link {
 .person-box {
 	/*Icons*/
 	border: solid 1px #eeeeee;
+	border-radius: 3px;
 	width: 55px;
 	height: auto;
 	padding: 2px 4px 2px 4px;
@@ -441,7 +442,16 @@ a.no-underline:link {
 #checkboxes {
 	width: 100%;
 	padding: 0 10% 5% 10%;
-	max-height: 55px;
+}
+
+#check-space {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+
+.checkbox-box {
+	margin: 0 10px 0 10px;
 }
 
 /*Code from css-workshop.com*/
@@ -584,17 +594,17 @@ a.no-underline:link {
 }
 
 #circle-1 {
-	position: absolute;
-	top: 90%;
-	right: 0%;
-	transform: translate(-30%, -90%);
+	position: relative;
+	top: 50%;
+	right: -150%;
+	transform: translate(50%, -50%);
 }
 
 #circle-2 {
-	position: absolute;
-	top: 90%;
-	left: 0%;
-	transform: translate(30%, -90%);
+	position: relative;
+	top: 50%;
+	left: -250%;
+	transform: translate(50%, -50%);
 }
 
 .move-left {
@@ -681,6 +691,7 @@ a.no-underline:link {
 
 .expand:hover {
 	scale: 1.1;
+	-webkit-transform: scale(1.1);
 	transition: 0.5s ease;
 }
 
@@ -976,4 +987,189 @@ a.grey-link:visited {
 	background-position: -2px -283px;
 	width: 16px;
 	height: 16px;
+}
+
+@media screen and (max-width: 1360px) {
+	/*Analytics*/
+	.right-left {
+		margin: 0 auto;
+	}
+
+	.right-right {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		border-left: none;
+	}
+	/*End Analytics*/
+
+	/*Did You*/
+	#circle-1 {
+		position: relative;
+		top: 50%;
+		right: -135%;
+		transform: translate(50%, -50%);
+	}
+
+	#circle-2 {
+		position: relative;
+		top: 50%;
+		left: -235%;
+		transform: translate(50%, -50%);
+	}
+	/*End Did You*/
+}
+
+@media screen and (max-width: 1155px) {
+	/*Did You*/
+	#circle-1 {
+		position: relative;
+		top: 50%;
+		right: -115%;
+		transform: translate(50%, -50%);
+	}
+
+	#circle-2 {
+		position: relative;
+		top: 50%;
+		left: -215%;
+		transform: translate(50%, -50%);
+	}
+	/*End Did You*/
+}
+
+@media screen and (max-width: 993px) {
+	/*Did You*/
+	#circle-1 {
+		position: relative;
+		top: 50%;
+		right: -160%;
+		transform: translate(50%, -50%);
+	}
+
+	#circle-2 {
+		position: relative;
+		top: 50%;
+		left: -260%;
+		transform: translate(50%, -50%);
+	}
+	/*End Did You*/
+}
+
+@media screen and (max-width: 767px) {
+	/*Dashboard*/
+
+	#dashboard {
+		height: auto;
+		display: block;
+		padding: 0 5px 25px 5px;
+		text-align: center;
+	}
+
+	#search {
+		height: 28px;
+		width: 200px;
+		background-color: white;
+		margin: 0 auto;
+	}
+
+	/*End Dashboard*/
+
+	/*Main Body*/
+
+	#div-sect {
+		width: 90%;
+	}
+
+	/*End Main Body*/
+
+	/*Analytics*/
+
+	.right-left {
+		width: 100% !important;
+	}
+
+	#main-graph {
+		width: 100% !important;
+	}
+
+	#checkboxes {
+		display: block !important;
+		height: 100px;
+	}
+
+	/*End Analytics*/
+
+	/*Customers*/
+
+	.seperate {
+		height: 50px;
+		width: 100%;
+	}
+
+	/*Did You*/
+	#circle-1 {
+		position: relative;
+		top: 50%;
+		right: -115%;
+		transform: translate(50%, -50%);
+	}
+
+	#circle-2 {
+		position: relative;
+		top: 50%;
+		left: -215%;
+		transform: translate(50%, -50%);
+	}
+	/*End Did You*/
+
+	/*Footer*/
+
+	#sweepstakes {
+		padding: 20px 0 20px 15px;
+		border-left: 0px;
+	}
+
+	#cooper-box {
+		padding: 5px;
+	}
+
+	#social-icons {
+		width: 100%;
+		padding: 30px 0 20px 0;
+	}
+
+	#grey-icons {
+		width: 50%;
+	}
+
+	.footer-divider2 {
+		border-left: none;
+	}
+}
+
+@media screen and (max-width: 457px) {
+	/*NavBars*/
+
+	.nav-icons {
+		scale: 75%;
+	}
+
+	/*End NavBars*/
+
+	/*Did You*/
+	#circle-1 {
+		position: relative;
+		top: 50%;
+		right: -80%;
+		transform: translate(50%, -50%);
+	}
+
+	#circle-2 {
+		position: relative;
+		top: 50%;
+		left: -180%;
+		transform: translate(50%, -50%);
+	}
+	/*End Did You*/
 }

@@ -110,7 +110,7 @@
         </div>
 
         <div id="container" class="row">
-          <div id="left-column" class="col-md-5 no-padding">
+          <div id="left-column" class="col-lg-5 no-padding">
             <div id="div-tasks">
               <div id="top-bar">
                 <h2 class="blue-text">Tasks</h2>
@@ -244,7 +244,7 @@
           </div>
           <!--End Left Column-->
 
-          <div class="col-sm-7 no-padding">
+          <div class="col-lg-7 no-padding">
             <div id="col-color">
               <h2 id="analytics" class="blue-text">Analytics</h2>
               <div id="right-column" class="row">
@@ -278,61 +278,70 @@
                   <div>
                     <p class="no-margin grey-text">Channels</p>
                     <img src="img\graph2-1.png" alt="Pie Graph" />
+                  </div>
+                  <div>
                     <p class="no-margin grey-text">Referrals</p>
                     <img src="img\graph2-2.png" alt="Pie Graph" />
                   </div>
-                  <div id="placeholder2"></div>
                 </div>
               </div>
 
-              <div id="checkboxes flex-center">
-                <div id="checkboxes" class="flex-around white-text">
+              <div id="checkboxes" class="flex-center white-text">
+                <div id="check-space" class="flex-around">
+                  <div class="checkbox-box flex-between">
+                    <input
+                      type="checkbox"
+                      name="social-media"
+                      value="Facebook"
+                      id="trigger1"
+                    />
+                    <label for="trigger1" class="checker"></label>
+                    <p id="fb"
+                    class="sm-text no-margin">
+                    Facebook
+                    </p>
+                  </div>
 
-                  <input
-                    type="checkbox"
-                    name="social-media"
-                    value="Facebook"
-                    id="trigger1"
-                  />
-                  <label for="trigger1" class="checker"></label>
-                  <p id="fb"
-                  class="sm-text no-margin">
-                  Facebook
-                  </p>
+                  <div class="checkbox-box flex-between">
+                    <input
+                      type="checkbox"
+                      name="social-media"
+                      value="Twitter"
+                      id="trigger2"
+                    />
+                    <label for="trigger2" class="checker"></label>
+                    <p id="tw"
+                    class="sm-text no-margin">Twitter</p>
+                  </div>
+                </div>
 
-                  <input
-                    type="checkbox"
-                    name="social-media"
-                    value="Twitter"
-                    id="trigger2"
-                  />
-                  <label for="trigger2" class="checker"></label>
-                  <p id="tw"
-                  class="sm-text no-margin">Twitter</p>
+                <div id="check-space" class="flex-around">
+                  <div class="checkbox-box flex-between">
+                    <input
+                      type="checkbox"
+                      name="social-media"
+                      value="Foursquare"
+                      id="trigger3"
+                    />
+                    <label for="trigger3" class="checker"></label>
+                    <p id="sq"
+                    class="sm-text no-margin">
+                    Foursquare
+                    </p>
+                  </div>
 
-                  <input
-                    type="checkbox"
-                    name="social-media"
-                    value="Foursquare"
-                    id="trigger3"
-                  />
-                  <label for="trigger3" class="checker"></label>
-                  <p id="sq"
-                  class="sm-text no-margin">
-                  Foursquare
-                  </p>
-
-                  <input
-                    type="checkbox"
-                    name="social-media"
-                    value="Google+"
-                    id="trigger4"
-                  />
-                  <label for="trigger4" class="checker"></label>
-                  <p id="gl" class="sm-text no-margin">
-                  Google+
-                  </p>
-                  
+                  <div class="checkbox-box flex-between">
+                    <input
+                      type="checkbox"
+                      name="social-media"
+                      value="Google+"
+                      id="trigger4"
+                    />
+                    <label for="trigger4" class="checker"></label>
+                    <p id="gl" class="sm-text no-margin">
+                    Google+
+                    </p>
+                  </div>
                 </div>
               </div>
               
@@ -340,7 +349,7 @@
 
               <!--Begin Customer Reviews-->
               <div id="customer" class="row">
-                <div class="col-lg-6 flex-center">
+                <div class="col-md-6 flex-center">
                   <div class="cust-border">
                     <div class="flex-center">
                       <img
@@ -364,7 +373,9 @@
                   </div>
                 </div>
 
-                <div id="placeholder4" class="col-lg-6 flex-center">
+                <div class="seperate"></div>
+
+                <div id="placeholder4" class="col-md-6 flex-center">
                   <div class="cust-border">
                     <div class="flex-center">
                       <img
@@ -390,20 +401,18 @@
               </div>
 
               <div id="know-sect" class="align-items">
-                <div id="did-you">
+                <div id="did-you" class="flex-around">
+                  <a href="#"><span id="circle-2" class="white-circle">
+                    <div class="spritesleft-arrow move-left"></div>
+                  </span></a>
                   <p id="know-text">
                     DID YOU KNOW? Maecenas sed diam eget risus varius blandit
                     sit amet non magna. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Etiam porta sem malesuada magna mollis
                     euismod.
                   </p>
-                </div>
-                <div id="right-know">
                   <a href="#"><span id="circle-1" class="white-circle">
                     <div class="spritesleft-arrow move-right reflect"></div>
-                  </span></a>
-                  <a href="#"><span id="circle-2" class="white-circle">
-                    <div class="spritesleft-arrow move-left"></div>
                   </span></a>
                 </div>
                 <div id="left-know"></div>
@@ -445,26 +454,26 @@
 
     <div id="footer-back">
       <div id="footer" class="row white-text">
-        <div class="col-sm-3 flex-around align-items foot-sect">
+        <div class="col-md-3 flex-around align-items foot-sect">
           <a href="#" class="no-underline grey-link"><p class="no-margin">Tutorials</p></a>
           <div class="footer-divider1"></div>
           <a href="#" class="no-underline grey-link"><p class="no-margin">Support</p></a>
           <div class="footer-divider1"></div>
           <a href="#" class="no-underline grey-link"><p class="no-margin">Blog</p></a>
         </div> 
-        <div class="col-sm-6 align-items flex-between">
+        <div class="col-md-6 align-items flex-between">
           <div class="footer-divider2"></div>
           <p id="sweepstakes" class="no-margin"><a href="#"><strong>Ariel Winter</strong></a> likes your <a href="#"><strong>Win a Cooper Sweepstakes</strong></a> Promotion</p>
           <a href="#"><img src="img/images/PullUp.png" alt="Up arrow"></a>
         </div>
-        <div class="col-sm-1 flex-center align-items">
+        <div class="col-md-1 flex-center align-items">
           <div class="footer-divider2"></div>
           <div id="cooper-box" class="align-items">
             <div class="img-footer"></div>
           </div>
           <p class="no-margin"><a href="#"><strong>Logout</strong></a></p>
         </div> 
-        <div class="col-sm-2 align-items">
+        <div class="col-md-2 align-items">
           <div class="footer-divider2"></div>
           <div id="social-icons" class="flex-center">
             <div id="grey-icons" class="flex-around">
