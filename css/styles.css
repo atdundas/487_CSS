@@ -21,6 +21,11 @@
 /*General*/
 /*Universal classes, body, headings*/
 
+.tooltip {
+	opacity: 100 !important;
+	position: relative;
+}
+
 body {
 	height: 100vh;
 	width: 100vw;
@@ -469,6 +474,7 @@ a.no-underline:link {
 	width: 22px;
 	height: 22px;
 	background-repeat: no-repeat;
+	margin: 0;
 }
 
 #trigger1:checked + .checker {
